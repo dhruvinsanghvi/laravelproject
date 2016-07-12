@@ -11,6 +11,7 @@
 |
 */
 
+<<<<<<< HEAD
 Route::group(['middleware'=>'web'],function(){
 
 
@@ -32,3 +33,9 @@ Route::post('/createuser','CreateUserController@create');
 
 
 });
+=======
+Route::get('/', [
+	'uses' => 'UserController@getProfile',
+	'as' => 'userprofile',
+]);
+>>>>>>> development

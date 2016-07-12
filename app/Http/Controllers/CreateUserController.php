@@ -63,7 +63,7 @@ class CreateUserController extends Controller {
 
         }
 
-         return view('userprofile');
+          return redirect('/');
       
 
     }

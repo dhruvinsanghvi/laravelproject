@@ -11,7 +11,7 @@
 |
 */
 
-<<<<<<< HEAD
+
 Route::group(['middleware'=>'web'],function(){
 
 
@@ -27,15 +27,15 @@ Route::get('/createuser','CreateUserController@index')->name('createuser');
 //Create a new user
 Route::post('/createuser','CreateUserController@create');
 
-
+Route::get('/', [
+	'uses' => 'UserController@getProfile',
+	'as' => 'userprofile',
+]);
 
 
 
 
 });
-=======
-Route::get('/', [
-	'uses' => 'UserController@getProfile',
-	'as' => 'userprofile',
-]);
->>>>>>> development
+
+
+

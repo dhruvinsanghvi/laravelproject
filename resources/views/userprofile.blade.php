@@ -24,6 +24,10 @@
                 width: 200px;
             }
 
+            .row{
+                margin:10px -15px;
+            }
+
             
         </style>
     </head>
@@ -32,8 +36,9 @@
             <div class="row">
        
                
-                
-
+                  <div class="col-md-12 text-center"><a href="<?php echo route('createuser') ?>" class="btn btn-primary">create profile</a></div>
+            </div>
+            <div class="row">
                 @foreach ($actions as $value)
                 <div class="col-md-3 col-xs-12 text-center">
                      <div class="panel panel-info">
@@ -52,7 +57,7 @@
                </div>
 
                 @endforeach
-
+              
              
                  
                  

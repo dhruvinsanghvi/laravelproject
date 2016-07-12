@@ -11,6 +11,24 @@
 |
 */
 
+Route::group(['middleware'=>'web'],function(){
+
+
+// Home Page
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+//Create a new user View 
+Route::get('/createuser','CreateUserController@index')->name('createuser');
+
+//Create a new user
+Route::post('/createuser','CreateUserController@create');
+
+
+
+
+
+
 });
